@@ -1,32 +1,44 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <h1 class="text-align-center">ABC Logistics</h1>
+    <div class="navigation">
+      <router-link to="/">List </router-link>
+      <router-link to="/details" class="m-b-5"> Details</router-link>
     </div>
     <router-view />
   </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.4;
+}
+
+.flex-jc-cntr {
+  display: flex;
+  justify-content: center;
+}
+
+.text-align-center {
   text-align: center;
-  color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
+.m-b-5 {
+  margin-bottom: 50px;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.navigation {
+  text-align: center;
+  margin: 20px 0;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+.navigation router-link {
+  padding-right: 50px;
 }
 </style>
